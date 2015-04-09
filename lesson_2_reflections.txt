@@ -1,0 +1,18 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Git creates a folder with the files in it. I think it is trying to keep track of things. However, there is no commit yet.
+I need to commit files myself. Git does tell me that there are some untracked files and that I could add those to the repository.
+I need to run an init so I can start committing files and then tracking changes.
+
+Staging Area
+
+Before committing everything to the repository, I can actually add files to the staging area to make sure I commit the way I want to.
+This way, if I want to commit certain files together and then other files separately. I can do that. The "add" command adds the files
+to the staging area.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Working directory is where I am actually working on the file. Staging area adds it to the Git tracking. To add the file to my repository,
+I first need to add the files to the staging area. Then I can commit only the files in the staging area to my repository. This way I have
+control over which files get committed, what commit notes I can add. I can divide my commits in a way that makes sense for my project. Maybe
+I do not want some files to be committed at this time.
