@@ -16,3 +16,35 @@ Working directory is where I am actually working on the file. Staging area adds 
 I first need to add the files to the staging area. Then I can commit only the files in the staging area to my repository. This way I have
 control over which files get committed, what commit notes I can add. I can divide my commits in a way that makes sense for my project. Maybe
 I do not want some files to be committed at this time.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+I can use git diff --staged to make sure the only change from my latest commit to the one I am about to commit is that one logical change.
+I can use git diff to make sure my working directory and staging area difference is only showing one logical change being added to the stage.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+When I am trying out something new, branch would help make sure the original project is still unchanged. Other people can continue to improve
+the original code, whereas I would work on adding a new functionality. Branches woulc show what features I tried to add in what order, and keep
+a good history of the project. Helps keep the project organized.
+
+How do the diagrams help you visualize the branch structure?
+
+It shows me easily how things are inter-related. If I can get to a certain commit from a certain branch. It also shows me if I would lose track
+of a commit if I did not create a branch for it.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Result of merging is adding changes from both branches. So we keep changes from both. If there are issues, then Git creates sections where conflicts
+are outlined for fixing. We show the merged commit on the right side on the diagram of branches, leading to both branches. That is because this merge
+is just another commit with the changes from both branches. We still can get access to the commits from each previous branch. Our merge is the latest
+commit.
+
+What are the pros and cons of Git's automatic merging vs always doing merges manually?
+
+Always doing manually:
+	pros: coder in full control, no unexpected bugs
+	cons: there could be too much to merge, especially small and independent changes
+Automatic merging:
+	pros: no need to spend time on small changes, also new independent functionality adds happen easily
+	cons: there could be bugs that Git cannot catch, such as if a function had a dependency and made a change that broke things later.
