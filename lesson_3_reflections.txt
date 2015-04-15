@@ -3,3 +3,8 @@ When would you want to use a remote repository rather than keeping all your work
 If I want someone else to be able to get access to my work, help me out or work on some other part, I would use a remote
 repo. I could also want to use a remote repo because I want to make sure I can work from any computer and if something
 happens to my computer, I have a backup online.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+I may not want to get everyone's input on my local project if we were working together without my express consent. If it was automatically
+updated, I may not know if it would break my code or not.
